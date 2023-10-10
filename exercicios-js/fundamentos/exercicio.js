@@ -8,10 +8,7 @@ function calcularMedia(aluno) {
 }
 
 function mostrarInfoAluno(aluno, media) {
-  let infoAluno = console.log(`Nome: ${aluno.nome} \n
-Idade: ${aluno.idade} \n
-Media: ${media}`);
-  return infoAluno;
+  console.log(`Nome: ${aluno.nome} \nIdade: ${aluno.idade} \nMedia: ${media}`);
 }
 
 const aluno = {
@@ -21,6 +18,5 @@ const aluno = {
 };
 
 const media = calcularMedia(aluno.notas);
-//console.log(`A media do ${aluno.nome} é ${media}`);
 const infoAluno = mostrarInfoAluno(aluno, media);
-console.log(infoAluno);
+infoAluno;
