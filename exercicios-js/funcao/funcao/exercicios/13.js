@@ -25,8 +25,8 @@ function diaUtil(dia) {
       console.log("Sábado dia inútil");
       break;
     default:
-      console.log("Sei lá que dia é esse");
+      console.log("Sei lá que dia é esse e se ele é útil");
   }
 }
 
-diaUtil(7);
+diaUtil();
