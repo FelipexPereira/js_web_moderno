@@ -14,32 +14,33 @@
 // enviarEmail(destinatario, mensagem): Um método que simula o envio de um e-mail para o destinatário especificado com a mensagem fornecida.
 
 class Pessoa {
-  constructor(nome, idade, email) {
-    this.nome = nome;
-    this.idade = idade;
-    this.email = email;
+    constructor(nome, idade, email) {
+      this.nome = nome;
+      this.idade = idade;
+      this.email = email;
+    }
+  
+    cumprimentar(){
+      console.log(`Olá sr(a) ${this.nome}!`)
+    }
+  
+    verificarMaioridade(){
+      return this.idade >= 18
+    }
+  
+    enviarEmail(destinatario, mensagem){
+      destinatario = this.email
+      console.log(`Email: ${destinatario} \nMensagem: ${mensagem}`)
+    }
   }
-
-  cumprimentar(){
-    console.log(`Olá sr(a) ${this.nome}!`)
-  }
-
-  verificarMaioridade(){
-    return this.idade >= 18
-  }
-
-  enviarEmail(destinatario, mensagem){
-    destinatario = this.email
-    console.log(`Email: ${destinatario} \nMensagem: ${mensagem}`)
-  }
-}
-
-const pessoa1 = new Pessoa('Felipe', 26, 'Felipe@gmail.com')
-const pessoa2 = new Pessoa('Victoria', 26, 'Victoria@gmail.com')
-
-pessoa1.cumprimentar()
-console.log(pessoa1.verificarMaioridade())
-pessoa1.enviarEmail('','oi')
-
-
-
+  
+  const pessoa1 = new Pessoa('Felipe', 26, 'Felipe@gmail.com')
+  const pessoa2 = new Pessoa('Victoria', 26, 'Victoria@gmail.com')
+  
+  pessoa1.cumprimentar()
+  console.log(pessoa1.verificarMaioridade())
+  pessoa1.enviarEmail('','oi')
+  
+  
+  
+  
